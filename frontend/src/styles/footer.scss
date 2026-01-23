@@ -97,6 +97,21 @@ footer {
     }
   }
 
+  .powered-by {
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 0.75rem;
+    color: var(--sub-color);
+    a {
+      color: var(--sub-color);
+      text-decoration: none;
+      transition: 0.125s;
+      &:hover {
+        color: var(--text-color);
+      }
+    }
+  }
+
   &.focus {
     .keyTips {
       opacity: 0 !important;
@@ -110,6 +125,9 @@ footer {
     #commandLineMobileButton {
       opacity: 0 !important;
       pointer-events: none !important;
+    }
+    .powered-by {
+      opacity: 0 !important;
     }
   }
 }
